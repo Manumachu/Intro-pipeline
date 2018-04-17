@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('Mallika-test-pipeline') {
       steps {
-        echo 'Hello ${My_NAME}!'
-        echo "${TEST_USER_USR}"
-        echo "${TEST_USER_PSW}"
+        echo "Hello ${params.Name}!"
       }
     }
   }
