@@ -1,12 +1,13 @@
 pipeline {
-  agent {
-    label 'jdk9'
-  }
+  agent any
   stages {
     stage('Mallika-test-pipeline') {
       steps {
-        echo 'Hello World'
+        echo 'Hello {My_NAME}!'
       }
     }
+  }
+  environment {
+    MY_NAME = 'Mallika'
   }
 }
