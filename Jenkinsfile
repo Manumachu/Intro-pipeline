@@ -11,11 +11,10 @@ pipeline {
         stage('Label') {
           steps {
             sh '''pipeline {
-   
    agent {
     label \'jdk9\'
     }
-   stages {
+stages{
       stage(\'Say Hello\') {
          steps {
             echo \'Hello World!\'   
