@@ -11,9 +11,10 @@ pipeline {
         stage('Label') {
           steps {
             sh '''pipeline {
-   pipeline {
-   agent jdk9
-   }
+   
+   agent {
+    label \'jdk9\'
+    }
    stages {
       stage(\'Say Hello\') {
          steps {
